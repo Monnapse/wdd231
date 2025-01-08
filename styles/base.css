@@ -91,6 +91,9 @@ main {
     border-radius: 10px;
     padding: 10px;
 }
+.courses-card {
+    grid-column: span 2;
+}
 
 /* Footer */
 footer {
