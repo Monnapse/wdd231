@@ -78,6 +78,10 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.navShow {
+    display: flex;
+}
+
 /* Main */
 main {
     display: grid;
@@ -125,6 +129,11 @@ footer {
     nav {
         display: none;
     }
+    nav a {
+        font-weight: 400;
+        font-size: 1.2em;
+    }
+    
     .menu {
         display: block;
     }
