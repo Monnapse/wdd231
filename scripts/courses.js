@@ -9,7 +9,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -22,7 +22,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -77,3 +77,81 @@ const courses = [
         completed: false
     }
 ]
+
+// Variables
+let filters = ["All"];
+
+// Elements
+const coursesElement = document.getElementById('courses');
+const coursesFiltersElement = document.getElementById('course-filters');
+const courseAmountElement = document.getElementById('course-amount');
+const creditsAmountElement = document.getElementById('credits-amount');
+
+// Functions
+function createButton(text, element)
+{
+    let btn = document.createElement('button');
+    btn.innerText = text;
+    element.appendChild(btn);
+    return btn;
+}
+function renderCourses(courseFilter)
+{
+    //courseAmount.innerText = `${courseFilter}`
+    let creditsCompleted = 0;
+    let totalCredits = 0;
+    coursesElement.innerHTML = "";
+    courses.forEach(course => {
+        if (courseFilter == null || courseFilter.toLowerCase() == "all" || course.subject.toLowerCase() == courseFilter.toLowerCase())
+        {
+            let text = "";
+    
+            if (course.completed)
+            {
+                creditsCompleted += course.credits;
+                //courseBtn.classList.add('completed');
+        
+                text = "✔";
+            }
+            totalCredits += course.credits;
+        
+            text += `${course.subject} ${course.number}`;
+            let btn = createButton(text, coursesElement);
+
+            if (course.completed)
+            {
+                btn.classList.add('completed');
+            }
+        }
+    });
+
+    // Update information
+    courseAmountElement.innerText = `The total number of course listed below is ${courses.length}`
+    creditsAmountElement.innerText = `The total number of credits completed ${creditsCompleted}/${totalCredits}`;
+}
+function renderFilters()
+{
+    //let filters = ["All"]
+    let all = createButton("All Courses", coursesFiltersElement);
+    all.onclick = function()
+    {
+        renderCourses();
+    }
+
+    courses.forEach(course => {
+        if (!filters.includes(course.subject))
+        {
+            let text = `${course.subject} Courses`;
+            let btn = createButton(text, coursesFiltersElement);
+            filters.push(course.subject);
+
+            btn.onclick = function()
+            {
+                renderCourses(course.subject);
+            }
+        }
+    });
+}
+
+renderFilters()
+renderCourses();

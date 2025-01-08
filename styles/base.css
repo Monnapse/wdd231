@@ -94,6 +94,19 @@ main {
 .courses-card {
     grid-column: span 2;
 }
+#courses {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-items: space-between;
+}
+.completed {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
 
 /* Footer */
 footer {
@@ -120,5 +133,11 @@ footer {
     }
     .head img {
         width: 80px;
+    }
+    #courses {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: space-between;
     }
 }
