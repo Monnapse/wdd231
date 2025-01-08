@@ -5,9 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mason Huber | WDD 231</title>
 
-    <link rel="stylesheet" href="styles/normalize.css">
+    <meta name="author" content="Mason Huber">
+    <meta name="description" content="WDD 231 Web Frontend Development I, Mason Huber">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Imperial+Script&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Maiden+Orange&family=Molle&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yesteryear&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Imperial+Script&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Maiden+Orange&family=Molle&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yesteryear&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <button class="menu">
+            <img src="images/hamburger.png" alt="menu">
+        </button>
+        <h1 class="head">
+            <img src="images/me.png" alt="me">WDD 131 - Dynamic Web Fundamentals - Mason Huber
+        </h1>
+        <nav>
+            <a href="/wdd231/">Home</a>
+            <a href="#">Chamber</a>
+            <a href="https://github.com/Monnapse">Github Profile</a>
+            <a href="https://www.linkedin.com/in/masonhuber/">LinkedIn</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Course Work</h2>
+            <div> 
+                <ul>
+                    <li>
+                        
+                    </li>
+                    <li>
+                        
+                    </li>
+                    <li>
+                        
+                    </li>
+                </ul>
+                <p>
+                    Hello my name is Mason Huber,
+                    I am from Utah.
+                </p>
+            </div>
+           
+        </section>
+        <section class="card">
+            <h2>Utah</h2>
+            <div>
+                <img src="images/utah.png" alt="utah">
+                <figcaption>Utah Flag</figcaption>
+            </div>
+        </section>
+        <section class="card" style="grid-column: span 2;">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div>
+                <div id="course-filters">
+                    <button>All</button>
+                    <button>CSE</button>
+                    <button>WDD</button>
+                </div>
+                <div id="courses">
+                    <button>CSE 110</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span>© <span id="currentYear"></span> Mason Huber | Utah</span>
+        <br>
+        <span id="lastModified"></span>
+    </footer>
 </body>
 </html>

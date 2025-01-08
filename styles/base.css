@@ -1,0 +1,121 @@
+/* Base Styles */
+:root {
+    --primary-font: "Poppins", sans-serif;
+    --secondary-font: "Nunito Sans", sans-serif;
+
+    --link-color: #208b79;
+    --link-hover-color: #25baa1;
+
+    --white: #c6bb74;
+    --smoke: #d4ca8b;
+
+    --secondary-color: #7c7448;
+}
+
+* {
+    font-family: var(--primary-font);
+}
+
+header, h2 {
+    font-family: var(--secondary-font);
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 900;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+button:hover {
+    cursor: pointer;
+}
+
+/* Header */
+.menu {
+    display: none;
+    float: right;
+    border: none;
+    background-color: transparent;
+}
+.menu:hover {
+    cursor: pointer;
+}
+.menu img {
+    width: 50px;
+}
+
+.head
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--smoke);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+nav a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: 100ms linear;
+
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+nav a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 5%;
+    max-width: 100%;
+}
+.card {
+    background-color: var(--smoke);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+#lastModified {
+    font-size: 0.8em;
+    color: var(--secondary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    .head {
+        font-size: 1.5em;;
+    }
+    .head img {
+        width: 80px;
+    }
+}
