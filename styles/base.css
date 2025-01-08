@@ -140,4 +140,10 @@ footer {
         gap: 20px;
         justify-items: space-between;
     }
+    main {
+        display: block;
+    }
+    .card {
+        margin-top: 10px;
+    }
 }
