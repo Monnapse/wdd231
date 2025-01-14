@@ -1,0 +1,21 @@
+{
+    "name": "",
+    "address": "",
+    "phone-number": 99999999999,
+    "website": "",
+    "image": "",
+    "membership-levels": [
+        {
+            "level": 1,
+            "name": "member"
+        },
+        {
+            "level": 2,
+            "name": "silver"
+        },
+        {
+            "level": 3,
+            "name": "gold"
+        }
+    ]
+}
