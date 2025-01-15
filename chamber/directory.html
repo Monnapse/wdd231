@@ -17,31 +17,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 
-
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/base.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="nav-title-container">
+        <div id="navTitle" class="nav-title-container">
             <img src="images/500x400.png">
             <div>
                 <h1>Timbuktu</h1>
                 <p>Chamber of Commerce</p>
             </div>
-
         </div>
-        <nav>
-            <a href="#" class="underline">Home</a>
-            <a href="#">Directory</a>
-            <a href="#">Join</a>
-            <a href="#">Discover</a>
-            <a href="#"><img src="images/500x400.png"></a>
+        <nav class="">
+            <button id="closeMenu" onclick="closeMenu()"><img src="images/close.png"></button>
+            <div id="navContent" class="nav-content">
+                <a href="#" class="underline">Home</a>
+                <a href="#">Directory</a>
+                <a href="#">Join</a>
+                <a href="#">Discover</a>
+            </div>
+            
+            <div id="navButtons" class="extra-nav-buttons">
+                <button><img src="images/contrast.png"></button>
+                <button id="openMenu" onclick="openMenu()"><img src="images/hamburger.png"></button>
+            </div>
         </nav>
     </header>
     <main>
         <div class="hero-img-container">
-            <img src="images/500x400.png">
+            <img src="images/timbuktu.jpg">
             <button>Keynote Tickets</button>
         </div>
 
@@ -60,7 +67,7 @@
                     <h3>Current Weather</h3>
                 </div>
                 <div class="info-main">
-                    <img src="images/500x400.png">
+                    <img src="images/partly-cloudy.png">
                     <div class="info-list">
                         <p><span>75</span> F</p>
                         <span>Partly Cloudy</span>
@@ -135,25 +142,27 @@
         </div>
     </main>
     <footer>
-        <div class="timbuktu-info">
-            <h3>Timbuktu Chamber of Commerce</h3>
-            <p>10 Rue De La Paix</p>
-            <p>Timbuktu, Mali 999</p>
-            <p>info@timbuktucc.org</p>
-            <p>(223) 555-2300</p>
-        </div>
-
-        <div class="footer-links">
-            <a href="#"><img src="images/500x400.png"></a>
-            <a href="#"><img src="images/500x400.png"></a>
-            <a href="#"><img src="images/500x400.png"></a>
-        </div>
-
-        <div class="info">
-            <p>WDD231 Class Project</p>
-            <p>Marie Martinez</p>
-            <p>© 2025 Timbuktu Chamber of Commerce</p>
-            <p>Last Modification: <span>XX/XX/XXXX XX:XX:XX</span></p>
+        <div>
+            <div class="timbuktu-info">
+                <h3>Timbuktu Chamber of Commerce</h3>
+                <p>10 Rue De La Paix</p>
+                <p>Timbuktu, Mali 999</p>
+                <p>info@timbuktucc.org</p>
+                <p>(223) 555-2300</p>
+            </div>
+    
+            <div class="footer-links">
+                <a href="#"><img src="images/youtube.png"></a>
+                <a href="#"><img src="images/twitter.png"></a>
+                <a href="#"><img src="images/linkedin.png"></a>
+            </div>
+    
+            <div class="info">
+                <p>WDD231 Class Project</p>
+                <p>Marie Martinez</p>
+                <p>© 2025 Timbuktu Chamber of Commerce</p>
+                <p>Last Modification: <span>XX/XX/XXXX XX:XX:XX</span></p>
+            </div>
         </div>
     </footer>
 </body>
