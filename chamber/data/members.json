@@ -1,21 +1,163 @@
-{
-    "name": "",
-    "address": "",
-    "phone-number": 99999999999,
-    "website": "",
-    "image": "",
-    "membership-levels": [
-        {
-            "level": 1,
-            "name": "member"
-        },
-        {
-            "level": 2,
-            "name": "silver"
-        },
-        {
-            "level": 3,
-            "name": "gold"
-        }
-    ]
-}
+[
+    {
+        "name": "Apple Inc.",
+        "address": "One Apple Park Way, Cupertino, CA 95014",
+        "phone": "1-800-692-7753",
+        "website": "https://www.apple.com",
+        "email": "contact@apple.com",
+        "image": "https://logo.clearbit.com/apple.com",
+        "tag": "Technology",
+        "membership-levels": [
+            {
+                "level": 1,
+                "name": "member"
+            },
+            {
+                "level": 2,
+                "name": "silver"
+            },
+            {
+                "level": 3,
+                "name": "gold"
+            }
+        ]
+    },
+    {
+        "name": "Amazon",
+        "address": "410 Terry Avenue North, Seattle, WA 98109",
+        "phone": "1-888-280-4331",
+        "website": "https://www.amazon.com",
+        "email": "support@amazon.com",
+        "image": "https://logo.clearbit.com/amazon.com",
+        "tag": "E-commerce",
+        "membership-levels": [
+            {
+                "level": 1,
+                "name": "member"
+            },
+            {
+                "level": 2,
+                "name": "silver"
+            },
+            {
+                "level": 3,
+                "name": "gold"
+            }
+        ]
+    },
+    {
+        "name": "Microsoft",
+        "address": "One Microsoft Way, Redmond, WA 98052",
+        "phone": "1-425-882-8080",
+        "website": "https://www.microsoft.com",
+        "email": "info@microsoft.com",
+        "image": "https://logo.clearbit.com/microsoft.com",
+        "tag": "Software",
+        "membership-levels": [
+            {
+                "level": 1,
+                "name": "member"
+            },
+            {
+                "level": 2,
+                "name": "silver"
+            },
+            {
+                "level": 3,
+                "name": "gold"
+            }
+        ]
+    },
+    {
+        "name": "Google",
+        "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043",
+        "phone": "1-650-253-0000",
+        "website": "https://www.google.com",
+        "email": "support@google.com",
+        "image": "https://logo.clearbit.com/google.com",
+        "tag": "Search Engine",
+        "membership-levels": [
+            {
+                "level": 1,
+                "name": "member"
+            },
+            {
+                "level": 2,
+                "name": "silver"
+            },
+            {
+                "level": 3,
+                "name": "gold"
+            }
+        ]
+    },
+    {
+        "name": "Facebook",
+        "address": "1 Hacker Way, Menlo Park, CA 94025",
+        "phone": "1-650-308-7300",
+        "website": "https://www.facebook.com",
+        "email": "info@facebook.com",
+        "image": "https://logo.clearbit.com/facebook.com",
+        "tag": "Social Media",
+        "membership-levels": [
+            {
+                "level": 1,
+                "name": "member"
+            },
+            {
+                "level": 2,
+                "name": "silver"
+            },
+            {
+                "level": 3,
+                "name": "gold"
+            }
+        ]
+    },
+    {
+        "name": "Tesla",
+        "address": "3500 Deer Creek Road, Palo Alto, CA 94304",
+        "phone": "1-888-518-3752",
+        "website": "https://www.tesla.com",
+        "email": "contact@tesla.com",
+        "image": "https://logo.clearbit.com/tesla.com",
+        "tag": "Automotive",
+        "membership-levels": [
+            {
+                "level": 1,
+                "name": "member"
+            },
+            {
+                "level": 2,
+                "name": "silver"
+            },
+            {
+                "level": 3,
+                "name": "gold"
+            }
+        ]
+    },
+    {
+        "name": "Nike",
+        "address": "One Bowerman Drive, Beaverton, OR 97005",
+        "phone": "1-800-806-6453",
+        "website": "https://www.nike.com",
+        "email": "support@nike.com",
+        "image": "https://logo.clearbit.com/nike.com",
+        "tag": "Apparel",
+        "membership-levels": [
+            {
+                "level": 1,
+                "name": "member"
+            },
+            {
+                "level": 2,
+                "name": "silver"
+            },
+            {
+                "level": 3,
+                "name": "gold"
+            }
+        ]
+    }
+]

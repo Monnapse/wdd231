@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #393836;
+    --primary-color: #3e3b35;
     --secondary-color: #FFD166;
-    --background-color: #a7a7a6;
-    --text-color: #c9bfbf;
-    --card-color: #868686;
+    --background-color: #edebe5;
+    --text-color: #f0e8e8;
+    --card-color: #575c5d;
 
     --font-family: "Oxygen", serif;
 
@@ -232,8 +232,10 @@ main h2 {
 }
 
 .business-container {
+    display: grid;
+
+    grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
     margin-top: 50px;
-    display: flex;
     width: 100%;
     gap: 15px;
 }
@@ -279,6 +281,14 @@ main h2 {
     flex-direction: column;
     gap: 10px;
     margin-left: 20px;
+    font-size: .9em;
+}
+
+.business-main-content p {
+    font-weight: bolder;
+}
+.business-main-content p span {
+    font-weight: lighter;
 }
 
 /* FOOTER */
@@ -303,13 +313,13 @@ footer div {
     gap: 40px;
 }
 .footer-links a {
-    background-color: var(--secondary-color);
+    background-color: var(--text-color);
     width: fit-content;
     height: fit-content;
     border-radius: 100%;
 }
 .footer-links a:hover {
-    background-color: var(--link-hover-color);
+    background-color: var(--card-color);
 }
 .footer-links img {
     width: 50px;
@@ -333,6 +343,12 @@ footer div {
 
 
 /* SCREEN SIZING */
+@media (max-width: 1364px) {
+    .business-main img {
+        width: 90px;
+        height: 90px;
+    }
+}
 @media (max-width: 1064px) {
     #openMenu {
         display: block;
