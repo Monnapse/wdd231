@@ -323,7 +323,7 @@ footer div {
 }
 .footer-links img {
     width: 50px;
-    height: 5%0px;
+    height: 50px;
     display: block;
     object-fit: cover;
     padding: 10px;
@@ -378,7 +378,7 @@ footer div {
     }
     .hero-img-container button {
         bottom: 20px;
-        right: 2cqh;
+        right: 20px;
     }
 }
 @media (max-width: 550px) {

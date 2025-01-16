@@ -51,7 +51,7 @@ function newCompanyCard(name, tagLine, email, phone, url, img)
             </div>
             <hr>
             <div class="business-main">
-                <img id="businessCardImg" src="${img}">
+                <img id="businessCardImg" src="${img}" alt="business img">
                 <div class="business-main-content">
                     <p>EMAIL: <span>${email}</span></p>
                     <p>PHONE: <span>${phone}</span></p>
