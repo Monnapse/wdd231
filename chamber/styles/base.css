@@ -254,6 +254,10 @@ main h2 {
     grid-template-columns:repeat(auto-fill, minmax(400px, 1fr));
 }
 
+.business-container, .business-container * {
+    transition: 0ms;
+}
+
 .business-container-list {
     display: flex;
     flex-direction: column;
