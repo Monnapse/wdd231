@@ -45,6 +45,7 @@ button {
     padding: 10px;
     background-color: var(--link-color);
     color: var(--primary-color);
+    font-weight: bolder;
 }
 button:hover {
     cursor: pointer;
@@ -231,11 +232,85 @@ main h2 {
     gap: 15px;
 }
 
-.business-container {
+.layout-type-container {
+    margin-top: 50px;
+}
+
+.layout-type-btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.layout-type-btns button {
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.business-container-grid {
     display: grid;
 
-    grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
-    margin-top: 50px;
+    grid-template-columns:repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.business-container-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.business-container-list .business-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.business-container-list .business-card hr {
+    display: none;
+}
+
+.business-container-list .business-card .business-header {
+    display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+
+    gap: 20px;
+    width: 20%;
+    height: 70px;
+
+    margin-left: 70px;
+}
+
+.business-container-list .business-card .business-main-content {
+    align-items: center;
+
+    display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+
+    gap: 50px;
+    margin-left: 100px;
+}
+
+.business-container-list .business-card {
+    position: relative;
+    padding-left: 10px;
+}
+
+.business-container-list .business-card img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.business-container {
+    margin-top: 20px;
     width: 100%;
     gap: 15px;
 }
@@ -274,6 +349,7 @@ main h2 {
     display: block;
     object-fit: cover;
     float: left;
+    border-radius: 10px;
 }
 
 .business-main-content {
@@ -348,6 +424,9 @@ footer div {
         width: 90px;
         height: 90px;
     }
+    .business-container-list .business-card  {
+        font-size: .9em;
+    }
 }
 @media (max-width: 1064px) {
     #openMenu {
@@ -365,6 +444,21 @@ footer div {
     .business-container {
         flex-direction: column;
     }
+    .business-container-list .business-card .business-main-content  {
+        margin-left: 10px;
+        font-size: .8em;
+    }
+    .business-container-list .business-card .business-header  {
+        font-size: .8em;
+    }
+    .business-container-list .business-card img {
+        width: 50px;
+        height: 50px;
+        border-radius: 4px;
+    }
+    .business-container-list .business-card {
+        height: 90px;
+    }
 }
 @media (max-width: 868px) {
     footer div {
@@ -379,6 +473,20 @@ footer div {
     .hero-img-container button {
         bottom: 20px;
         right: 20px;
+    }
+    .business-container-list .business-card {
+        flex-direction: column;
+    }
+    .business-container-list .business-card .business-header {
+        margin-left: 0px;
+        width: 100%;
+        float: left;
+        left: 0;
+    }
+
+    .business-container-list .business-card .business-main-content {
+        margin-left: 50px;
+        font-size: .7em;
     }
 }
 @media (max-width: 550px) {
@@ -400,5 +508,12 @@ footer div {
     }
     .extra-nav-buttons {
         padding-right: 0;
+    }
+    .business-container-list .business-card .business-main-content {
+        display: flex;
+        gap: 10px;
+    }
+    .business-container-list .business-card {
+        height: 100px;
     }
 }

@@ -38,6 +38,20 @@ function closeMenu()
 /* COMPANY CARDS */
 const businessContainerElement = document.getElementById("businessContainer");
 
+/* DISPLAY MEMBERS AS */
+
+function setGrid()
+{
+    businessContainerElement.classList.remove("business-container-list");
+    businessContainerElement.classList.add("business-container-grid");
+}
+
+function setList()
+{
+    businessContainerElement.classList.remove("business-container-grid");
+    businessContainerElement.classList.add("business-container-list");
+}
+
 function newCompanyCard(name, tagLine, email, phone, url, img)
 {
     const newCompanyCard = document.createElement("div");
@@ -65,18 +79,16 @@ function newCompanyCard(name, tagLine, email, phone, url, img)
 }
 
 // Fetch the company member json and turn into cards
-fetch("data/members.json")
-    .then(response => {
-        // Check for errors
+async function fetchMembers() {
+    try {
+        const response = await fetch('data/members.json');
         if (!response.ok) {
             throw new Error('Network response was not ok ' + response.statusText);
         }
-        return response.json();
-    })
-    .then(data => {
-        // Do processing
-
+        const data = await response.json();
+        
         // Clear company cards already there because they are placeholders
+        const businessContainerElement = document.getElementById('businessContainer');
         businessContainerElement.innerHTML = '';
         
         data.forEach(member => {
@@ -89,12 +101,13 @@ fetch("data/members.json")
                 member.image
             );
         });
-
-    })
-    .catch(error => {
+    } catch (error) {
         // The fetch got an error
         console.error('There was a problem with the fetch operation:', error);
-    })
+    }
+}
+
+fetchMembers();
 
 /* DATES */
 
