@@ -258,6 +258,10 @@ main h2 {
     transition: 0ms;
 }
 
+.business-container hr {
+    border-color: var(--card-color);
+}
+
 .business-container-list {
     display: flex;
     flex-direction: column;
@@ -324,11 +328,6 @@ main h2 {
     background-color: var(--card-color);
     border-radius: 10px
 }
-
-.business-card hr {
-    border-color: var(--primary-color);
-}
-
 .business-header {
     display: flex;
     flex-direction: column;
