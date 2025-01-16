@@ -95,3 +95,14 @@ fetch("data/members.json")
         // The fetch got an error
         console.error('There was a problem with the fetch operation:', error);
     })
+
+/* DATES */
+
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
+
+const lastModifiedElement = document.getElementById("lastModified");
+const currentYearElement = document.getElementById("currentYear");
+
+currentYear.textContent = `${currentYear}`
+lastModifiedElement.textContent =`${document.lastModified}`
