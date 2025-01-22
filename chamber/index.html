@@ -27,7 +27,7 @@
     <script src="scripts/base.js" defer></script>
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/weather.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 </head>
 <body>
     <header>
@@ -41,8 +41,8 @@
         <nav class="">
             <button id="closeMenu" onclick="closeMenu()"><img src="images/close.png" alt="menu closee"></button>
             <div id="navContent" class="nav-content">
-                <a href="index.html">Home</a>
-                <a href="directory.html" class="underline">Directory</a>
+                <a href="index.html" class="underline">Home</a>
+                <a href="directory.html">Directory</a>
                 <a href="#">Join</a>
                 <a href="#">Discover</a>
             </div>
@@ -78,11 +78,11 @@
                     <div class="info-list">
                         <p><span id="wtTemp">75</span> F</p>
                         <span id="wtDesc">Partly Cloudy</span>
-                        <p id="wtHigh">High: <span>85</span></p>
-                        <p id="wtLow">Low: <span>52</span></p>
-                        <p id="wtHumi">Humidity: <span>34</span>%</p>
-                        <p id="wtSrise">Sunrise: <span>7:30am</span></p>
-                        <p id="wtSset">Sunset: <span>9:59pm</span></p>
+                        <p>High: <span id="wtHigh">85</span></p>
+                        <p>Low: <span id="wtLow">52</span></p>
+                        <p>Humidity: <span id="wtHumi">34</span>%</p>
+                        <p>Sunrise: <span id="wtSrise">7:30am</span></p>
+                        <p>Sunset: <span id="wtSset">9:59pm</span></p>
                     </div>
                 </div>
             </div>
@@ -92,9 +92,9 @@
                 </div>
                 <div class="info-main">
                     <div class="info-list">
-                        <p>Today: <span>90</span> F</p>
-                        <p>Wednesday: <span>89</span> F</p>
-                        <p>Thursday: <span>68</span></p>
+                        <p>Today: <span id="todayTemp">90</span> F</p>
+                        <p>Wednesday: <span id="oneDayTemp">89</span> F</p>
+                        <p>Thursday: <span id="twoDayTemp">68</span> F</p>
                     </div>
                 </div>
             </div>
