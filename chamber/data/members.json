@@ -7,7 +7,7 @@
         "email": "contact@apple.com",
         "image": "https://logo.clearbit.com/apple.com",
         "tag": "Technology",
-        "membership-levels": [
+        "membership_levels": [
             {
                 "level": 1,
                 "name": "member"
@@ -30,7 +30,7 @@
         "email": "support@amazon.com",
         "image": "https://logo.clearbit.com/amazon.com",
         "tag": "E-commerce",
-        "membership-levels": [
+        "membership_levels": [
             {
                 "level": 1,
                 "name": "member"
@@ -53,7 +53,7 @@
         "email": "info@microsoft.com",
         "image": "https://logo.clearbit.com/microsoft.com",
         "tag": "Software",
-        "membership-levels": [
+        "membership_levels": [
             {
                 "level": 1,
                 "name": "member"
@@ -76,7 +76,7 @@
         "email": "support@google.com",
         "image": "https://logo.clearbit.com/google.com",
         "tag": "Search Engine",
-        "membership-levels": [
+        "membership_levels": [
             {
                 "level": 1,
                 "name": "member"
@@ -99,7 +99,7 @@
         "email": "info@facebook.com",
         "image": "https://logo.clearbit.com/facebook.com",
         "tag": "Social Media",
-        "membership-levels": [
+        "membership_levels": [
             {
                 "level": 1,
                 "name": "member"
@@ -122,7 +122,7 @@
         "email": "contact@tesla.com",
         "image": "https://logo.clearbit.com/tesla.com",
         "tag": "Automotive",
-        "membership-levels": [
+        "membership_levels": [
             {
                 "level": 1,
                 "name": "member"
@@ -145,7 +145,7 @@
         "email": "support@nike.com",
         "image": "https://logo.clearbit.com/nike.com",
         "tag": "Apparel",
-        "membership-levels": [
+        "membership_levels": [
             {
                 "level": 1,
                 "name": "member"

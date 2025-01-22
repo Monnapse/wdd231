@@ -7,12 +7,33 @@ async function fetchMembers() {
         }
         const data = await response.json();
         
+        if (!data) { return; }
+
         // Clear company cards already there because they are placeholders
         const businessContainerElement = document.getElementById('businessContainer');
         businessContainerElement.innerHTML = '';
 
-        const indexes = Math.floor(Math.random() * 2) + 2;
+        // Remove all that dont have silver or gold
+        var memberIndex = 0;
+        data.forEach(member => {
+            var found = false;
+            member.membership_levels.forEach(level => {
+                if (level.name.toLowerCase() == "silver" || level.name.toLowerCase() == "gold")
+                {
+                    found = true;
+                }
+            })
 
+            if (!found)
+            {
+                data.splice(memberIndex, 1)
+            }
+
+            memberIndex++;
+        });
+
+
+        const indexes = Math.floor(Math.random() * 2) + 2;
         for (var i=0; i < indexes; i++)
         {
             const index = Math.floor(Math.random() * data.length);
@@ -24,6 +45,7 @@ async function fetchMembers() {
                 member.phone, 
                 member.website,
                 member.image
+        
             );
 
             data.splice(index, 1)
