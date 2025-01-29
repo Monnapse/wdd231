@@ -526,10 +526,10 @@ form button[type="submit"]:hover {
     flex-direction: column;
     gap: 10px;
 }
-.modal-info > span {
+.modal-info > p {
     font-weight: 700;
 }
-.modal-info p {
+.modal-info span {
     font-weight: 500;
 }
 

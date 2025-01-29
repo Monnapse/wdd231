@@ -10,7 +10,7 @@ function submitForm(page)
 
     for (const pair of formData.entries()) {
         const inputElement = document.querySelector(`[name="${pair[0]}"]`);
-        if (inputElement.hasAttribute('required')) {
+        if (inputElement.hasAttribute('required') || inputElement == document.getElementById("timestamp")) {
             params.append(pair[0], pair[1]);
         }
     }

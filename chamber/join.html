@@ -33,85 +33,85 @@
 <body>
     <dialog class="modal" id="nonprofit-modal">
         <div>
-            <button class="modal-close"><img src="images/close.png" onclick="closeModal(`nonprofit-modal`)"></button>
+            <button class="modal-close"><img src="images/close.png" onclick="closeModal(`nonprofit-modal`)" alt="close"></button>
             <h2>Non Profit Membership Level</h2>
             
             <div class="modal-info">
-                <span>Cost: <p>$8.99</p></span>
-                <span>
+                <p>Cost: <span>$8.99</span></p>
+                <p>
                     Benefits: 
                     <br> 
-                    <p>
+                    <span>
                         special events,
                         training, 
                         advertising, 
                         event discounts, 
                         etc
-                    </p>
-                </span>
+                    </span>
+                </p>
             </div>
         </div>
     </dialog>
     <dialog class="modal" id="bronze-modal">
         <div>
-            <button class="modal-close"><img src="images/close.png" onclick="closeModal(`bronze-modal`)"></button>
+            <button class="modal-close"><img src="images/close.png" onclick="closeModal(`bronze-modal`)" alt="close"></button>
             <h2>Bronze Membership Level</h2>
             
             <div class="modal-info">
-                <span>Cost: <p>$12.99</p></span>
-                <span>
+                <p>Cost: <span>$12.99</span></p>
+                <p>
                     Benefits: 
                     <br> 
-                    <p>
+                    <span>
                         special events,
                         training, 
                         advertising, 
                         event discounts, 
                         etc
-                    </p>
+                    </span>
                 </span>
             </div>
         </div>
     </dialog>
     <dialog class="modal" id="silver-modal">
         <div>
-            <button class="modal-close"><img src="images/close.png" onclick="closeModal(`silver-modal`)"></button>
+            <button class="modal-close"><img src="images/close.png" onclick="closeModal(`silver-modal`)" alt="close"></button>
             <h2>Silver Membership Level</h2>
             
             <div class="modal-info">
-                <span>Cost: <p>$19.99</p></span>
-                <span>
+                <p>Cost: <span>$19.99</span></p>
+                <p>
                     Benefits: 
                     <br> 
-                    <p>
+                    <span>
                         special events,
                         training, 
                         advertising, 
                         event discounts, 
                         etc
-                    </p>
-                </span>
+                    </span>
+                </p>
             </div>
         </div>
     </dialog>
     <dialog class="modal" id="gold-modal">
         <div>
-            <button class="modal-close"><img src="images/close.png" onclick="closeModal(`gold-modal`)"></button>
+            <button class="modal-close"><img src="images/close.png" onclick="closeModal(`gold-modal`)" alt="close"></button>
             <h2>Gold Membership Level</h2>
             
             <div class="modal-info">
-                <span>Cost: <p>$29.99</p></span>
-                <span>
+                <p>Cost: <span>$29.99</span></p>
+                <p>
                     Benefits: 
                     <br> 
-                    <p>
+                    <span>
                         special events,
                         training, 
                         advertising, 
                         event discounts, 
                         etc
-                    </p>
-                </span>
+                    </span>
+                </p>
             </div>
         </div>
     </dialog>
@@ -142,94 +142,84 @@
     <main>
         <div class="membership-container">
             <h2>Membership Application Form</h2>
-            <form id="thankYouForm">
-                <label for="fname">
+            <form id="thankYouForm" method="post">
+                <label id="fname" for="fname">
                     First Name:
                     <br>
-                    <input class="input-text" type="text" name="fname" autocomplete="name" required>
+                    <input id="fname" class="input-text" type="text" name="fname" autocomplete="name" required>
                 </label>
 
                 <br>
 
-                <label for="lname">
+                <label id="lname" for="lname">
                     Last Name:
                     <br>
-                    <input class="input-text" type="text" name="lname" autocomplete="name" required>
+                    <input id="lname" class="input-text" type="text" name="lname" autocomplete="name" required>
                 </label>
 
                 <br>
 
-                <label for="title">
+                <label id="title" for="title">
                     Title:
                     <br>
-                    <input class="input-text" type="text" name="title" autocomplete="organization-title">
+                    <input id="title" class="input-text" type="text" name="title" autocomplete="organization-title">
                 </label>
 
                 <br>
             
-                <label for="email">
+                <label id="email" for="email">
                     Email Address:
                     <br>
-                    <input class="input-text" type="email" name="email" autocomplete="email" required>
+                    <input id="email" class="input-text" type="email" name="email" autocomplete="email" required>
                 </label>
 
                 <br>
 
-                <label for="phone">
+                <label id="phone" for="phone">
                     Phone Number:
                     <br>
-                    <input class="input-text" type="tel" name="phone" autocomplete="tel" required>
+                    <input id="phone" class="input-text" type="tel" name="phone" autocomplete="tel" required>
                 </label>
 
                 <br>
 
-                <label for="organization">
+                <label id="organization" for="organization">
                     Organization:
                     <br>
-                    <input class="input-text" type="text" name="organization" autocomplete="organization" required>
+                    <input id="organization" class="input-text" type="text" name="organization" autocomplete="organization" required>
                 </label>
             
                 <br>
 
-                <label for="membership">
+                <label id="membership" for="membership">
                     Membership Level:
                     <br>
 
-                    <label for="np">
-                        <input type="radio" name="membership" value="nonprofit" checked> 
-                        Non Profit Membership
-                    </label>
+                    <input id="membership" type="radio" name="membership" value="nonprofit" checked> 
+                    Non Profit Membership
+
+                    <br>
+                    <input id="membership" type="radio" name="membership" value="bronze">
+                    Bronze Membership
+
+                    <br>
+
+                    <input id="membership" type="radio" name="membership" value="silver">
+                    Silver Membership
 
                     <br>
 
 
-                    <label for="bronze">
-                        <input type="radio" name="membership" value="bronze">
-                        Bronze Membership
-                    </label>
-
-                    <br>
-
-                    <label for="silver">
-                        <input type="radio" name="membership" value="silver">
-                        Silver Membership
-                    </label>
-
-                    <br>
-
-
-                    <label for="gold">
-                        <input type="radio" name="membership" value="gold">
-                        Gold Membership
-                    </label>
+                    <input id="membership" type="radio" name="membership" value="gold">
+                    Gold Membership
                 </label>
 
                 <br>
 
-                <label for="bodescription">
+                <label id="bodescription" for="bodescription">
                     Business/Organization Description:
                     <br>
-                    <textarea class="input-text input-textarea" name="bodescription"></textarea>
+                    <textarea id="bodescription" class="input-text input-textarea" name="bodescription"></textarea>
                 </label><br>
 
                 <script>
@@ -240,7 +230,7 @@
                     };
                 </script>
 
-                <input type="hidden" id="timestamp" name="timestamp" required>
+                <input type="hidden" id="timestamp" name="timestamp">
 
                 <button type="submit">Submit</button>
             </form>
