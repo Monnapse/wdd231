@@ -420,6 +420,71 @@ footer div {
     gap: 5px;
 }
 
+/* FORM */
+.membership-container {
+    float: left;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    max-width: 500px;
+}
+form * {
+    color: var(--primary-color);
+    font-size: 1.1em;
+}
+form button[type="submit"] {
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--link-color);
+    border: 1px solid var(--link-hover-color);
+}
+.input-text {
+    border-radius: 5px;
+    height: 25px;
+    width: 100%;
+    border-left: 5px solid var(--link-hover-color);
+}
+.input-textarea {
+    height: 50px;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* MEMBERSHIP CARDS */
+.membership-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+.membership-card {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    border-radius: 5px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.membership-card div {
+    padding: 15px;
+}
+.membership-card button {
+    background-color: var(--background-color);
+    padding: 5px 10px;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+.membership-card button:hover {
+    background-color: var(--link-color);
+}
 
 /* SCREEN SIZING */
 @media (max-width: 1364px) {

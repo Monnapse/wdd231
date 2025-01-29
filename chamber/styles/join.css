@@ -1,0 +1,15 @@
+main {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px
+}
+
+@media (max-width: 868px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+}

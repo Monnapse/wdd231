@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber | Timbuktu Chamber of Commerce</title>
+
+    <meta name="author" content="Mason Huber">
+    <meta name="description" content="over business opportunities, events, and resources through the Timbuktu Chamber of Commerce. Join us to connect with the local community.">
+    <meta name="keywords" content="Timbuktu Chamber of Commerce, Timbuktu business directory, local businesses, community events, Timbuktu weather, join chamber of commerce">
+
+    <meta property="og:title" content="Timbuktu Chamber of Commerce">
+    <meta property="og:description" content="Explore the Timbuktu Chamber of Commerce: events, weather updates, and a thriving business directory. Join us to grow your business!">
+    <meta property="og:image" content="https://monnapse.github.io/wdd231/chamber/images/timbuktu-logo.png">
+    <meta property="og:url" content="https://monnapse.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Timbuktu Chamber of Commerce">
+
+    <link rel="icon" href="images/timbuktu-logo.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/base.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="navTitle" class="nav-title-container">
+            <img src="images/timbuktu-logo.png" alt="logo">
+            <div>
+                <h1>Timbuktu</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <nav class="">
+            <button id="closeMenu" onclick="closeMenu()"><img src="images/close.png" alt="menu closee"></button>
+            <div id="navContent" class="nav-content">
+                <a href="index.html">Home</a>
+                <a href="directory.html" class="underline">Directory</a>
+                <a href="#">Join</a>
+                <a href="#">Discover</a>
+            </div>
+            
+            <div id="navButtons" class="extra-nav-buttons">
+                <button><img src="images/contrast.png" alt="theme"></button>
+                <button id="openMenu" onclick="openMenu()"><img src="images/hamburger.png" alt="menu open"></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="membership-container">
+            <h2>Membership Application Form</h2>
+            <form>
+                <label for="fname">
+                    First Name:
+                    <br>
+                    <input class="input-text" type="text" name="fname" autocomplete="name" required>
+                </label>
+
+                <br>
+
+                <label for="lname">
+                    Last Name:
+                    <br>
+                    <input class="input-text" type="text" name="lname" autocomplete="name" required>
+                </label>
+
+                <br>
+
+                <label for="title">
+                    Title:
+                    <br>
+                    <input class="input-text" type="text" name="title" autocomplete="organization-title">
+                </label>
+
+                <br>
+            
+                <label for="email">
+                    Email Address:
+                    <br>
+                    <input class="input-text" type="email" name="email" autocomplete="email" required>
+                </label>
+
+                <br>
+
+                <label for="phone">
+                    Phone Number:
+                    <br>
+                    <input class="input-text" type="tel" name="phone" autocomplete="tel" required>
+                </label>
+
+                <br>
+
+                <label for="organization">
+                    Organization:
+                    <br>
+                    <input class="input-text" type="text" name="organization" autocomplete="organization" required>
+                </label>
+            
+                <br>
+
+                <label for="membership">
+                    Membership Level:
+                    <br>
+
+                    <label for="np">
+                        <input type="radio" name="membership" value="nonprofit" checked> 
+                        Non Profit Membership
+                    </label>
+
+                    <br>
+
+
+                    <label for="bronze">
+                        <input type="radio" name="membership" value="bronze">
+                        Bronze Membership
+                    </label>
+
+                    <br>
+
+                    <label for="silver">
+                        <input type="radio" name="membership" value="silver">
+                        Silver Membership
+                    </label>
+
+                    <br>
+
+
+                    <label for="gold">
+                        <input type="radio" name="membership" value="gold">
+                        Gold Membership
+                    </label>
+                </label>
+
+                <br>
+
+                <label for="bodescription">
+                    Business/Organization Description:
+                    <br>
+                    <textarea class="input-text input-textarea" name="bodescription" required></textarea>
+                </label><br>
+
+
+                <script>
+                    window.onload = function() {
+                      const timestampField = document.getElementById('timestamp');
+                      const now = new Date().toISOString();
+                      timestampField.value = now;
+                    };
+                </script>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <div>
+            <h2>Membership Levels</h2>
+            <div class="membership-card-container">
+                <div class="membership-card">
+                    <div>
+                        <h2>Non Profit Membership Level</h2>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                <div class="membership-card">
+                    <div>
+                        <h2>Bronze Membership Level</h2>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                <div class="membership-card">
+                   <div>
+                        <h2>Silver Membership Level</h2>
+                        <button>Learn More</button>
+                   </div>
+                </div>
+                <div class="membership-card">
+                    <div>
+                        <h2>Gold Membership Level</h2>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <div class="timbuktu-info">
+                <h3>Timbuktu Chamber of Commerce</h3>
+                <p>10 Rue De La Paix</p>
+                <p>Timbuktu, Mali 999</p>
+                <p>info@timbuktucc.org</p>
+                <p>(223) 555-2300</p>
+            </div>
+    
+            <div class="footer-links">
+                <a href="#"><img src="images/youtube.png" alt="youtube"></a>
+                <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="images/linkedin.png" alt="linkedin"></a>
+            </div>
+    
+            <div class="info">
+                <p>WDD231 Class Project</p>
+                <p>Mason Huber</p>
+                <p>© <span id="currentYear">2025</span> Timbuktu Chamber of Commerce</p>
+                <p>Last Modification: <span id="lastModified">XX/XX/XXXX XX:XX:XX</span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
