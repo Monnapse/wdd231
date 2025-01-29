@@ -17,3 +17,9 @@ function submitForm(page)
 
     window.location.href = `${page}?` + params.toString();
 }
+
+document.getElementById("thankYouForm").addEventListener(`submit`, event=>{
+    event.preventDefault();
+
+    submitForm("thankyou.html");
+});

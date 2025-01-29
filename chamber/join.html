@@ -142,7 +142,7 @@
     <main>
         <div class="membership-container">
             <h2>Membership Application Form</h2>
-            <form>
+            <form id="thankYouForm">
                 <label for="fname">
                     First Name:
                     <br>
@@ -231,7 +231,7 @@
                     <br>
                     <textarea class="input-text input-textarea" name="bodescription"></textarea>
                 </label><br>
-                
+
                 <script>
                     window.onload = function() {
                       const timestampField = document.getElementById('timestamp');
@@ -242,7 +242,7 @@
 
                 <input type="hidden" id="timestamp" name="timestamp" required>
 
-                <button type="submit" onclick="submitForm(`thankyou.html`)">Submit</button>
+                <button type="submit">Submit</button>
             </form>
         </div>
         
