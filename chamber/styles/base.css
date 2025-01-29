@@ -503,6 +503,11 @@ form button[type="submit"]:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    background-color: var(--background-color);
+    border-radius: 10px;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    overflow: hidden;
 }
 .modal::backdrop {
      background: rgb(0 0 0 / 0.5);
@@ -531,13 +536,6 @@ form button[type="submit"]:hover {
 }
 .modal-info span {
     font-weight: 500;
-}
-
-:modal {
-    background-color: var(--background-color);
-    border-radius: 10px;
-    border: 1px solid rgb(0 0 0 / 0.1);
-    overflow: hidden;
 }
 
 /* THANK YOU */
