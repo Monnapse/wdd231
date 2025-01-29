@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber | Timbuktu Chamber of Commerce</title>
+
+    <meta name="author" content="Mason Huber">
+    <meta name="description" content="over business opportunities, events, and resources through the Timbuktu Chamber of Commerce. Join us to connect with the local community.">
+    <meta name="keywords" content="Timbuktu Chamber of Commerce, Timbuktu business directory, local businesses, community events, Timbuktu weather, join chamber of commerce">
+
+    <meta property="og:title" content="Timbuktu Chamber of Commerce">
+    <meta property="og:description" content="Explore the Timbuktu Chamber of Commerce: events, weather updates, and a thriving business directory. Join us to grow your business!">
+    <meta property="og:image" content="https://monnapse.github.io/wdd231/chamber/images/timbuktu-logo.png">
+    <meta property="og:url" content="https://monnapse.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Timbuktu Chamber of Commerce">
+
+    <link rel="icon" href="images/timbuktu-logo.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/base.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="navTitle" class="nav-title-container">
+            <img src="images/timbuktu-logo.png" alt="logo">
+            <div>
+                <h1>Timbuktu</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <nav class="">
+            <button id="closeMenu" onclick="closeMenu()"><img src="images/close.png" alt="menu closee"></button>
+            <div id="navContent" class="nav-content">
+                <a href="index.html">Home</a>
+                <a href="directory.html" class="underline">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="discover.html">Discover</a>
+            </div>
+            
+            <div id="navButtons" class="extra-nav-buttons">
+                <button><img src="images/contrast.png" alt="theme"></button>
+                <button id="openMenu" onclick="openMenu()"><img src="images/hamburger.png" alt="menu open"></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="thankyou">
+            <h2>Thank You</h2>
+            <p>First Name: <span id="fname">eofos</span></p>
+            <p>Last Name: <span id="lname">eofos</span></p>
+            <p>Email: <span id="email">eofos@gmail.com</span></p>
+            <p>Mobile Number: <span id="phone">000000000</span></p>
+            <p>Business Name: <span id="organization">asdsdfhsdssgfd</span></p>
+            <p>Form Date: <span id="timestamp">1/29/2025 12:22:22</span></p>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <div class="timbuktu-info">
+                <h3>Timbuktu Chamber of Commerce</h3>
+                <p>10 Rue De La Paix</p>
+                <p>Timbuktu, Mali 999</p>
+                <p>info@timbuktucc.org</p>
+                <p>(223) 555-2300</p>
+            </div>
+    
+            <div class="footer-links">
+                <a href="#"><img src="images/youtube.png" alt="youtube"></a>
+                <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="images/linkedin.png" alt="linkedin"></a>
+            </div>
+    
+            <div class="info">
+                <p>WDD231 Class Project</p>
+                <p>Mason Huber</p>
+                <p>© <span id="currentYear">2025</span> Timbuktu Chamber of Commerce</p>
+                <p>Last Modification: <span id="lastModified">XX/XX/XXXX XX:XX:XX</span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

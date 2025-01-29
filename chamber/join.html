@@ -27,8 +27,95 @@
 
     <script src="scripts/base.js" defer></script>
     <script src="scripts/dates.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
+    <script src="scripts/form.js" defer></script>
 </head>
 <body>
+    <dialog class="modal" id="nonprofit-modal">
+        <div>
+            <button class="modal-close"><img src="images/close.png" onclick="closeModal(`nonprofit-modal`)"></button>
+            <h2>Non Profit Membership Level</h2>
+            
+            <div class="modal-info">
+                <span>Cost: <p>$8.99</p></span>
+                <span>
+                    Benefits: 
+                    <br> 
+                    <p>
+                        special events,
+                        training, 
+                        advertising, 
+                        event discounts, 
+                        etc
+                    </p>
+                </span>
+            </div>
+        </div>
+    </dialog>
+    <dialog class="modal" id="bronze-modal">
+        <div>
+            <button class="modal-close"><img src="images/close.png" onclick="closeModal(`bronze-modal`)"></button>
+            <h2>Bronze Membership Level</h2>
+            
+            <div class="modal-info">
+                <span>Cost: <p>$12.99</p></span>
+                <span>
+                    Benefits: 
+                    <br> 
+                    <p>
+                        special events,
+                        training, 
+                        advertising, 
+                        event discounts, 
+                        etc
+                    </p>
+                </span>
+            </div>
+        </div>
+    </dialog>
+    <dialog class="modal" id="silver-modal">
+        <div>
+            <button class="modal-close"><img src="images/close.png" onclick="closeModal(`silver-modal`)"></button>
+            <h2>Silver Membership Level</h2>
+            
+            <div class="modal-info">
+                <span>Cost: <p>$19.99</p></span>
+                <span>
+                    Benefits: 
+                    <br> 
+                    <p>
+                        special events,
+                        training, 
+                        advertising, 
+                        event discounts, 
+                        etc
+                    </p>
+                </span>
+            </div>
+        </div>
+    </dialog>
+    <dialog class="modal" id="gold-modal">
+        <div>
+            <button class="modal-close"><img src="images/close.png" onclick="closeModal(`gold-modal`)"></button>
+            <h2>Gold Membership Level</h2>
+            
+            <div class="modal-info">
+                <span>Cost: <p>$29.99</p></span>
+                <span>
+                    Benefits: 
+                    <br> 
+                    <p>
+                        special events,
+                        training, 
+                        advertising, 
+                        event discounts, 
+                        etc
+                    </p>
+                </span>
+            </div>
+        </div>
+    </dialog>
+
     <header>
         <div id="navTitle" class="nav-title-container">
             <img src="images/timbuktu-logo.png" alt="logo">
@@ -42,8 +129,8 @@
             <div id="navContent" class="nav-content">
                 <a href="index.html">Home</a>
                 <a href="directory.html" class="underline">Directory</a>
-                <a href="#">Join</a>
-                <a href="#">Discover</a>
+                <a href="join.html">Join</a>
+                <a href="discover.html">Discover</a>
             </div>
             
             <div id="navButtons" class="extra-nav-buttons">
@@ -142,10 +229,9 @@
                 <label for="bodescription">
                     Business/Organization Description:
                     <br>
-                    <textarea class="input-text input-textarea" name="bodescription" required></textarea>
+                    <textarea class="input-text input-textarea" name="bodescription"></textarea>
                 </label><br>
-
-
+                
                 <script>
                     window.onload = function() {
                       const timestampField = document.getElementById('timestamp');
@@ -154,9 +240,9 @@
                     };
                 </script>
 
-                <input type="hidden" id="timestamp" name="timestamp">
+                <input type="hidden" id="timestamp" name="timestamp" required>
 
-                <button type="submit">Submit</button>
+                <button type="submit" onclick="submitForm(`thankyou.html`)">Submit</button>
             </form>
         </div>
         
@@ -166,25 +252,25 @@
                 <div class="membership-card">
                     <div>
                         <h2>Non Profit Membership Level</h2>
-                        <button>Learn More</button>
+                        <button onclick="openModal(`nonprofit-modal`)">Learn More</button>
                     </div>
                 </div>
                 <div class="membership-card">
                     <div>
                         <h2>Bronze Membership Level</h2>
-                        <button>Learn More</button>
+                        <button onclick="openModal(`bronze-modal`)">Learn More</button>
                     </div>
                 </div>
                 <div class="membership-card">
                    <div>
                         <h2>Silver Membership Level</h2>
-                        <button>Learn More</button>
+                        <button onclick="openModal(`silver-modal`)">Learn More</button>
                    </div>
                 </div>
                 <div class="membership-card">
                     <div>
                         <h2>Gold Membership Level</h2>
-                        <button>Learn More</button>
+                        <button onclick="openModal(`gold-modal`)">Learn More</button>
                     </div>
                 </div>
             </div>

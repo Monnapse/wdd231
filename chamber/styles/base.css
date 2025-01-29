@@ -440,6 +440,10 @@ form button[type="submit"] {
     background-color: var(--link-color);
     border: 1px solid var(--link-hover-color);
 }
+form button[type="submit"]:hover {
+    background-color: var(--link-hover-color);
+    color: var(--text-color);
+}
 .input-text {
     border-radius: 5px;
     height: 25px;
@@ -458,6 +462,10 @@ form button[type="submit"] {
     flex-direction: column;
     gap: 20px
 }
+@keyframes moveIn {
+    from { margin-top: 30px; }
+    to { margin-top: 0px; }
+}
 .membership-card {
     background-color: var(--secondary-color);
     border: 1px solid var(--primary-color);
@@ -472,6 +480,8 @@ form button[type="submit"] {
     border-radius: 5px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
+
+    animation: moveIn 700ms forwards;
 }
 .membership-card div {
     padding: 15px;
@@ -486,6 +496,62 @@ form button[type="submit"] {
     background-color: var(--link-color);
 }
 
+/* MODALS */
+.modal {
+    padding: 50px;
+    max-width: 50ch;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal::backdrop {
+     background: rgb(0 0 0 / 0.5);
+}
+.modal * {
+    color: var(--primary-color);
+}
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 10px;
+}
+.modal > div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.modal-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.modal-info > span {
+    font-weight: 700;
+}
+.modal-info p {
+    font-weight: 500;
+}
+
+:modal {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    overflow: hidden;
+}
+
+/* THANK YOU */
+.thankyou * {
+    color: var(--primary-color);
+}
+.thankyou p {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.thankyou span {
+    font-size: 1.2em;
+    font-weight: 500;
+}
 /* SCREEN SIZING */
 @media (max-width: 1364px) {
     .business-main img {
