@@ -28,7 +28,6 @@
     <script src="scripts/base.js" defer></script>
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/modal.js" defer></script>
-    <script src="scripts/form.js" defer></script>
 </head>
 <body>
     <dialog class="modal" id="nonprofit-modal">
@@ -142,24 +141,24 @@
     <main>
         <div class="membership-container">
             <h2>Membership Application Form</h2>
-            <form id="thankYouForm" method="post">
-                <label id="fname" for="fname">
+            <form id="thankYouForm" method="get" action="thankyou.html">
+                <label>
                     First Name:
                     <br>
-                    <input class="input-text" type="text" name="fname" autocomplete="name" required>
+                    <input class="input-text" type="text" name="fname" autocomplete="given-name" required>
                 </label>
 
                 <br>
 
-                <label id="lname" for="lname">
+                <label>
                     Last Name:
                     <br>
-                    <input class="input-text" type="text" name="lname" autocomplete="name" required>
+                    <input class="input-text" type="text" name="lname" autocomplete="family-name" required>
                 </label>
 
                 <br>
 
-                <label id="title" for="title">
+                <label>
                     Title:
                     <br>
                     <input class="input-text" type="text" name="title" autocomplete="organization-title">
@@ -167,7 +166,7 @@
 
                 <br>
             
-                <label id="email" for="email">
+                <label>
                     Email Address:
                     <br>
                     <input class="input-text" type="email" name="email" autocomplete="email" required>
@@ -175,7 +174,7 @@
 
                 <br>
 
-                <label id="phone" for="phone">
+                <label>
                     Phone Number:
                     <br>
                     <input class="input-text" type="tel" name="phone" autocomplete="tel" required>
@@ -183,7 +182,7 @@
 
                 <br>
 
-                <label id="organization" for="organization">
+                <label>
                     Organization:
                     <br>
                     <input class="input-text" type="text" name="organization" autocomplete="organization" required>
@@ -191,32 +190,32 @@
             
                 <br>
 
-                <label id="membership" for="membership">
-                    Membership Level:
+                <h3>Membership Level:</h3>
                     <br>
 
+                <label>
                     <input type="radio" name="membership" value="nonprofit" checked> 
                     Non Profit Membership
-
-                    <br>
+                </label>
+                <br>
+                <label>
                     <input type="radio" name="membership" value="bronze">
                     Bronze Membership
-
-                    <br>
-
+                </label>
+                <br>
+                <label>
                     <input type="radio" name="membership" value="silver">
                     Silver Membership
-
-                    <br>
-
-
+                </label>
+                <br>
+                <label>
                     <input type="radio" name="membership" value="gold">
                     Gold Membership
                 </label>
 
                 <br>
 
-                <label id="bodescription" for="bodescription">
+                <label>
                     Business/Organization Description:
                     <br>
                     <textarea class="input-text input-textarea" name="bodescription"></textarea>
