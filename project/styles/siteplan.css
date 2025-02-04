@@ -1,0 +1,38 @@
+.color-scheme-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.color-scheme-container div {
+    width: 100%;
+    height: 250px;
+}
+
+.color-scheme-container div p {
+    padding: 15px;
+}
+.color-white {
+    color: white;
+}
+
+.font-oxanium {
+    font-family: 'Oxanium';
+}
+.font-poppins {
+    font-family: 'Poppins';
+}
+
+.img-container {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
