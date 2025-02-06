@@ -550,6 +550,67 @@ form button[type="submit"]:hover {
     font-size: 1.2em;
     font-weight: 500;
 }
+
+/* Discover */
+.discover-container {
+    display: grid;
+
+}
+.discover-container > div {
+    margin: 1rem 8px;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photograph"
+    "description"
+    "location"
+    "button";
+}
+.discover-container h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+}
+.discover-container div img {
+    width: 100%;
+    grid-area: photograph;
+    object-fit: cover;
+}
+.discover-container div p {
+    color: black;
+    margin: 1rem 10px;
+    grid-area: description;
+}
+.discover-container div address {
+    color: black;
+    margin: 1rem 10px;
+    grid-area: location;
+}
+.discover-container div button {
+    grid-area: button;
+    margin: 1rem 10px;
+    border-radius: 100px;
+}
+@media only screen and (min-width: 38rem) {
+    .discover-container > div {
+        grid-template-areas: 
+        "photograph name"
+        "photograph description"
+        "photograph location"
+        "button";
+    }
+}
+@media only screen and (min-width: 64rem) {
+    .discover-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
 /* SCREEN SIZING */
 @media (max-width: 1364px) {
     .business-main img {

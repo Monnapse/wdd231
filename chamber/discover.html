@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover | Timbuktu Chamber of Commerce</title>
+
+    <meta name="author" content="Mason Huber">
+    <meta name="description" content="over business opportunities, events, and resources through the Timbuktu Chamber of Commerce. Join us to connect with the local community.">
+    <meta name="keywords" content="Timbuktu Chamber of Commerce, Timbuktu business directory, local businesses, community events, Timbuktu weather, join chamber of commerce">
+
+    <meta property="og:title" content="Timbuktu Chamber of Commerce">
+    <meta property="og:description" content="Explore the Timbuktu Chamber of Commerce: events, weather updates, and a thriving business directory. Join us to grow your business!">
+    <meta property="og:image" content="https://monnapse.github.io/wdd231/chamber/images/timbuktu-logo.png">
+    <meta property="og:url" content="https://monnapse.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Timbuktu Chamber of Commerce">
+
+    <link rel="icon" href="images/timbuktu-logo.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/base.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/places.js" type="module" defer></script>
+    <script src="scripts/customerVisit.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <div id="navTitle" class="nav-title-container">
+            <img src="images/timbuktu-logo.png" alt="logo">
+            <div>
+                <h1>Timbuktu</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <nav class="">
+            <button id="closeMenu" onclick="closeMenu()"><img src="images/close.png" alt="menu closee"></button>
+            <div id="navContent" class="nav-content">
+                <a href="index.html" class="underline">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="discover.html">Discover</a>
+            </div>
+            
+            <div id="navButtons" class="extra-nav-buttons">
+                <button><img src="images/contrast.png" alt="theme"></button>
+                <button id="openMenu" onclick="openMenu()"><img src="images/hamburger.png" alt="menu open"></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2 id="customerDisplay">Welcome! Let us know if you have any questions.</h2>
+        <div class="discover-container">
+            <div>
+                <img src="https://www.nps.gov/common/uploads/banner_image/imr/homepage/47299690-C5E9-0C7F-0CF70CFE6625C0E7.jpg?mode=crop&quality=90&width=1024&height=300" alt="image">
+                <h2>Zion National Park</h2>
+                <address>1 Zion Park Blvd, Springdale, UT 84767</address>
+                <p>Explore Zion's stunning red rock formations, canyons, and diverse hiking trails. Popular hikes include Angels Landing and The Narrows.</p>
+                <button>Learn More</button>
+            </div>
+            <div>
+                <img src="https://www.nps.gov/common/uploads/banner_image/imr/homepage/438D2599-B433-F166-9A6156C1B2F148D8.jpg?mode=crop&quality=90&width=1200&height=350" alt="image">
+                <h2>Arches National Park</h2>
+                <address>PO Box 907, Moab, UT 84532</address>
+                <p>Home to over 2,000 natural stone arches, this park offers scenic drives and hikes like the Delicate Arch Trail.</p>
+                <button>Learn More</button>
+            </div>
+            <div>
+                <img src="https://homesteadresort.com/wp-content/uploads/2023/05/Z25_6624-scaled.jpg" alt="image">
+                <h2>Homestead Crater</h2>
+                <address>700 North Homestead Dr, Midway, UT 84049</address>
+                <p>A geothermal spring inside a 55-foot limestone dome, offering year-round swimming and spa services.</p>
+                <button>Learn More</button>
+            </div>
+            <div>
+                <img src="https://scene7.vailresorts.com/is/image/vailresorts/20230207_PC_Wright_087:Featured-Content-AND-Sliding-Cards-AND-Container-Long-Amount?resMode=sharp2&w=855&h=480&wid=565&fit=constrain,1&dpr=on,1" alt="image">
+                <h2>Park City Mountain Resort</h2>
+                <address>1345 Lowell Ave, Park City, UT 84060</address>
+                <p>One of the largest ski resorts in the U.S., featuring diverse slopes, terrain parks, and après-ski activities.</p>
+                <button>Learn More</button>
+            </div>
+            <div>
+                <img src="https://images.ctfassets.net/0wjmk6wgfops/3lYMrGxBG4heY6ZqAmXMJe/6696ccf66e20aea922c5bbd35bc7f882/AdobeStock_224202875.jpeg?w=1920&h=501&fit=fill&f=center&q=70" alt="image">
+                <h2>Ensign Peak</h2>
+                <address>1000 N Ensign Vista Dr, Salt Lake City, UT 84103</address>
+                <p>A short hike offering panoramic views of Salt Lake City, especially stunning at sunset.</p>
+                <button>Learn More</button>
+            </div>
+            <div>
+                <img src="https://images.ctfassets.net/0wjmk6wgfops/3WRVZrwr311SwlyzfTydlt/df15f5b0ab7a985f0762196bed3ee1f0/Antelope_Island_blue_skies_stock_AdobeStock_313773770.jpeg?w=1920&h=501&fit=fill&f=center&q=70" alt="image">
+                <h2>Antelope Island State Park</h2>
+                <address>4528 W 1700 S, Syracuse, UT 84075</address>
+                <p>Explore the largest island in the Great Salt Lake, known for its bison herds, hiking trails, and birdwatching opportunities.</p>
+                <button>Learn More</button>
+            </div>
+            <div>
+                <img src="https://www.visitbrycecanyon.com/media/824061/bryce-canyon-scenic-223170894-2000x.jpg?anchor=center&mode=crop&width=500&height=300&rnd=133783187250000000" alt="image">
+                <h2>Bryce Canyon National Park</h2>
+                <address>Bryce, UT 84764</address>
+                <p>Famous for its unique hoodoos and vibrant red rock formations, offering numerous hiking trails and scenic viewpoints.</p>
+                <button>Learn More</button>
+            </div>
+            <div>
+                <img src="https://images.squarespace-cdn.com/content/v1/670d9b42adf2454bb327ee37/50853aa2-af07-4b45-a57b-5692141dbddc/economic_benchmark_banner_downtown_skyline.jpg?format=2500w" alt="image">
+                <h2>Downtown Salt Lake City</h2>
+                <address>Salt Lake City, UT 84101</address>
+                <p>Visit landmarks like Temple Square, the Utah State Capitol, and enjoy diverse dining and shopping options.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <div class="timbuktu-info">
+                <h3>Timbuktu Chamber of Commerce</h3>
+                <p>10 Rue De La Paix</p>
+                <p>Timbuktu, Mali 999</p>
+                <p>info@timbuktucc.org</p>
+                <p>(223) 555-2300</p>
+            </div>
+    
+            <div class="footer-links">
+                <a href="#"><img src="images/youtube.png" alt="youtube"></a>
+                <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+                <a href="#"><img src="images/linkedin.png" alt="linkedin"></a>
+            </div>
+    
+            <div class="info">
+                <p>WDD231 Class Project</p>
+                <p>Mason Huber</p>
+                <p>© <span id="currentYear">2025</span> Timbuktu Chamber of Commerce</p>
+                <p>Last Modification: <span id="lastModified">XX/XX/XXXX XX:XX:XX</span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
