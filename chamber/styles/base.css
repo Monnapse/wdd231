@@ -610,7 +610,7 @@ form button[type="submit"]:hover {
     }
 }
 
-#customerDisplay {
+#customerDisplay, .title {
     color: black;
 }
 
