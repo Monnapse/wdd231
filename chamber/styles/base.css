@@ -610,6 +610,9 @@ form button[type="submit"]:hover {
     }
 }
 
+#customerDisplay {
+    color: black;
+}
 
 /* SCREEN SIZING */
 @media (max-width: 1364px) {
