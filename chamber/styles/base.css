@@ -556,7 +556,11 @@ form button[type="submit"]:hover {
     display: grid;
 
 }
+/*
 .discover-container > div {
+    
+}*/
+.place-card {
     margin: 1rem 8px;
     border: 1px solid #999;
     background-color: #eee;
@@ -596,7 +600,7 @@ form button[type="submit"]:hover {
     border-radius: 100px;
 }
 @media only screen and (min-width: 38rem) {
-    .discover-container > div {
+    .place-card > div {
         grid-template-areas: 
         "photograph name"
         "photograph description"

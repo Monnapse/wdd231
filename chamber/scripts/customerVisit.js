@@ -1,4 +1,4 @@
-const customerDisplay = document.getElementById("customerDisplay");
+
 
 function getDaysBetweenDates(date1, date2) {
     const oneDay = 24 * 60 * 60 * 1000;
@@ -7,8 +7,9 @@ function getDaysBetweenDates(date1, date2) {
 }
 
 
-const currentDate = new Date();
+const date = new Date();
 const lastVisitDateString = localStorage.getItem("lastVisitDate");
+const customerDisplay = document.getElementById("customerDisplay");
 
 if (lastVisitDateString) {
     const lastVisitDate = new Date(lastVisitDateString);
@@ -25,4 +26,5 @@ if (lastVisitDateString) {
     customerDisplay.textContent = "Welcome! Let us know if you have any questions.";
 }
 
-localStorage.setItem("lastVisitDate", currentDate.toISOString());
+
+localStorage.setItem("lastVisitDate", date.toISOString());
