@@ -583,6 +583,7 @@ form button[type="submit"]:hover {
     width: 100%;
     grid-area: photograph;
     object-fit: cover;
+    transition: 200ms ease-in-out;
 }
 .discover-container div p {
     color: black;
@@ -598,6 +599,11 @@ form button[type="submit"]:hover {
     grid-area: button;
     margin: 1rem 10px;
     border-radius: 100px;
+}
+@media only screen and (min-width: 48rem) {
+    .place-card img:hover {
+        transform: rotate(5deg);
+    }
 }
 @media only screen and (min-width: 38rem) {
     .place-card > div {
