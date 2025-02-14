@@ -1,0 +1,8 @@
+.flex {display: flex;}
+.flex-col {flex-direction: column;}
+.flex-row {flex-direction: row;}
+.g-5 {gap: 50px;}
+.g-4 {gap: 40px;}
+.g-3 {gap: 30px;}
+.g-2 {gap: 20px;}
+.g-1 {gap: 10px;}

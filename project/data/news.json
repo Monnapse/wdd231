@@ -1,0 +1,37 @@
+[
+    {
+        "thumbnail": "assets/images/optimized/screenshot-1-min.png",
+        "title": "SHITWAY Announced – A Gravity-Defying FPS Experience!",
+        "article": "article-1.md",
+        "time": 1739380901,
+        "description": "Prepare to redefine your sense of direction! SHITWAY, the upcoming first-person shooter, introduces a revolutionary gravity system, allowing players to fight on walls, ceilings, and floating corridors within a massive space station. Get ready for fast-paced combat, destructible environments, and mind-bending zero-G battles. Stay tuned for more updates as we bring this gravity-defying adventure to life!"
+    },
+    {
+        "thumbnail": "assets/images/optimized/screenshot-2-min.png",
+        "title": "Gameplay Reveal – Navigating the Space Station",
+        "article": "article-2.md",
+        "time": 1739256883,
+        "description": "Our latest gameplay reveal showcases the heart-pounding movement mechanics of SHITWAY. Navigate a sprawling space station orbiting Earth, utilizing artificial gravity to walk on any surface. Fight enemies from all angles as you adapt to the ever-shifting battlefield. Watch the teaser trailer now and experience the thrill of 360-degree combat!"
+    },
+    {
+        "thumbnail": "assets/images/optimized/screenshot-3-min.png",
+        "title": "Developer Insights – Crafting a Zero-G World",
+        "article": "article-3.md",
+        "time": 1738455701,
+        "description": "In this exclusive behind-the-scenes look, our lead developer dives into the challenges of creating SHITWAY’s unique gravity system. From inverted gravity to wall-walking mechanics, learn how the team is pushing the boundaries of traditional FPS gameplay. Discover the inspirations behind our futuristic space station and how destructible environments add to the chaos!"
+    },
+    {
+        "thumbnail": "assets/images/optimized/screenshot-4-min.png",
+        "title": "Closed Beta Sign-Ups Now Open!",
+        "article": "article-4.md",
+        "time": 1735777301,
+        "description": "Be among the first to experience SHITWAY! We are excited to announce that closed beta sign-ups are now open. Test out the gravity-defying mechanics, explore the space station's labyrinthine corridors, and help us shape the future of this fast-paced FPS. Register now to secure your spot and join the fight on all surfaces!"
+    },
+    {
+        "thumbnail": "assets/images/optimized/screenshot-4-min.png",
+        "title": "Community Spotlight – Fan Theories and Speculations",
+        "article": "article-5.md",
+        "time": 1704154901,
+        "description": "The community is buzzing with excitement! From theories about hidden lore to speculations on advanced weaponry, SHITWAY fans are eagerly piecing together the mysteries of our space station. Check out the best fan theories and join the discussion on our Discord server. Who knows? You might just uncover a secret before launch day!"
+    }
+]

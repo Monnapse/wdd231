@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIFTWAY</title>
+
+    <meta name="title" content="SHIFTWAY – A Gravity-Defying FPS Experience">
+    <meta name="author" content="SHIFTWAY Development Team">
+    <meta name="description" content="
+    Step into SHIFTWAY, a high-speed FPS set in a futuristic 
+    space station with inverted gravity. Navigate walls, ceilings, 
+    and zero-G.
+    ">
+    <meta name="keywords" content="
+    FPS, space shooter, zero gravity, artificial gravity, 
+    futuristic warfare, destruction, space station, gravity manipulation, 
+    sci-fi combat, immersive gameplay
+    ">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#D0FF00">
+
+    <meta property="og:title" content="SHIFTWAY: A Gravity-Defying FPS Experience">
+    <meta property="og:description" content="
+    Experience a unique FPS where gravity is no longer your ally. 
+    Fight on walls, ceilings, and floating corridors in a massive, 
+    space station.
+    ">
+    <meta property="og:image" content="https://monnapse.github.io/SHIFTWAY-Vanilla/assets/images/icon.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="192">
+    <meta property="og:image:height" content="192">
+    <meta property="og:url" content="https://monnapse.github.io/SHIFTWAY-Vanilla/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="SHIFTWAY">
+    <meta property="og:color" content="#D0FF00">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SHIFTWAY: A Gravity-Defying FPS Experience">
+    <meta name="twitter:description" content="Step into a fast-paced FPS where you battle in a futuristic space station with full gravity manipulation.">
+    <meta name="twitter:image" content="https://monnapse.github.io/SHIFTWAY-Vanilla/assets/images/icon.png">
+
+    <link rel="icon" href="assets/images/icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="js/lib/fetch.js" defer></script>
+    <script src="js/lib/news.js" defer></script>
+    <script src="js/pages/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <script src="js/elements/nav.js" defer></script>
+        <script>
+            window.addEventListener('DOMContentLoaded', function() {
+                loadNav(document.querySelector("header"));
+            });
+        </script>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="hero-container">
+                <div class="hero">
+                    <img class="hero-logo" src="assets/images/LogoText.svg" alt="SHIFTWAY" loading="lazy">
+                    <div>
+                        <h3>Defy Gravity. Conquer the Unknown.</h3>
+                        <p>A fast paced FPS where every surface is your battleground.</p>
+                    </div>
+                    <div class="hero-btns">
+                        <a href="#trailer" class="btn-2">WATCH THE TRAILER</a>
+                        <a href="jointhebeta.html" class="btn-1">JOIN THE BETA</a>
+                    </div>
+                </div>
+            </div>
+            <div class="page-content">
+                <div class="section-container">
+                    <div>
+                        <h2 id="about" class="section-title-rotated">ABOUT THE GAME</h2>
+                        <div class="section-content">
+                            <div class="about-card">
+                                <h3>ABOUT THE GAME</h3>
+                                <p>
+                                    The gravity-shifting mechanics and unique movement system create a 
+                                    dynamic and disorienting experience. As players move through the station, gravity 
+                                    can be manipulated, allowing them to walk along walls or the ceiling as if they're 
+                                    simply walking on the floor. With the push of a button or a clever use of a gadget or 
+                                    jetpack, players can flip gravity to seamlessly transition between surfaces, adding layers of 
+                                    strategy and exploration. Each new room or hallway offers a fresh perspective, where the usual 
+                                    concept of "up" and "down" no longer applies. This opens up creative possibilities for combat a
+                                    nd navigation, requiring players to constantly adjust their spatial awareness as they encounter 
+                                    new challenges in this ever-shifting environment.
+                                </p>
+                                <a href="about.html" class="link">MORE ABOUT THE GAME</a>
+                            </div>
+                            <div class="section-info-cards">
+                                <div class="img-info-card">
+                                    <div>
+                                        <h3>KEY CONCEPT</h3>
+                                        <p>Inverted gravity forces you to rethink FPS combat.</p>
+                                    </div>
+                                    <img src="assets/images/optimized/screenshot-2-min.png" alt="screentshot" loading="lazy">
+                                </div>
+                                <div class="img-info-card">
+                                    <div>
+                                        <h3>IMMERSIVE SETTING</h3>
+                                        <p>Gigantic orbiting space station with advanced tech.</p>
+                                    </div>
+                                    <img src="assets/images/optimized/screenshot-3-min.png" alt="screentshot" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-container-ignore">
+                    <h2 id="trailer" class="section-title">WATCH THE TRAILER ( placeholder )</h2>
+                    <iframe class="section-container-video"
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/iu6tX_GrVJ8?si=NUnGChZlh5t7MeXZ" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen
+                        >
+                    </iframe>
+                </div>
+
+                <div class="section-container">
+                    <div>
+                        <h2 id="about" class="section-title-rotated">NEWS</h2>
+                        <div class="section-content">
+                            <h3>NEWS</h3>
+                            
+                            <div id="newsContainer" class="flex flex-col g-2">
+                                <div id="newsContainerMain">
+                                </div>
+                                <div id="newsContainerSecondary" class="news-cards-secondary">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <script src="js/elements/footer.js" defer></script>
+        <script>
+            window.addEventListener('DOMContentLoaded', function() {
+                loadFooter(document.querySelector("footer"));
+            });
+        </script>
+    </footer>
+</body>
+</html>

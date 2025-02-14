@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIFTWAY | Support</title>
+
+    <meta name="title" content="SHIFTWAY – A Gravity-Defying FPS Experience">
+    <meta name="author" content="SHIFTWAY Development Team">
+    <meta name="description" content="
+    Step into SHIFTWAY, a high-speed FPS set in a futuristic 
+    space station with inverted gravity. Navigate walls, ceilings, 
+    and zero-G.
+    ">
+    <meta name="keywords" content="
+    FPS, space shooter, zero gravity, artificial gravity, 
+    futuristic warfare, destruction, space station, gravity manipulation, 
+    sci-fi combat, immersive gameplay
+    ">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#D0FF00">
+
+    <meta property="og:title" content="SHIFTWAY: A Gravity-Defying FPS Experience">
+    <meta property="og:description" content="
+    Experience a unique FPS where gravity is no longer your ally. 
+    Fight on walls, ceilings, and floating corridors in a massive, 
+    space station.
+    ">
+    <meta property="og:image" content="https://monnapse.github.io/SHIFTWAY-Vanilla/assets/images/icon.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="192">
+    <meta property="og:image:height" content="192">
+    <meta property="og:url" content="https://monnapse.github.io/SHIFTWAY-Vanilla/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="SHIFTWAY">
+    <meta property="og:color" content="#D0FF00">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SHIFTWAY: A Gravity-Defying FPS Experience">
+    <meta name="twitter:description" content="Step into a fast-paced FPS where you battle in a futuristic space station with full gravity manipulation.">
+    <meta name="twitter:image" content="https://monnapse.github.io/SHIFTWAY-Vanilla/assets/images/icon.png">
+
+    <link rel="icon" href="assets/images/icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="js/pages/support.js" defer></script>
+</head>
+<body>
+    <header>
+        <script src="js/elements/nav.js" defer></script>
+        <script>
+            window.addEventListener('DOMContentLoaded', function() {
+                loadNav(document.querySelector("header"));
+            });
+        </script>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="hero-container">
+                <div class="hero hero-2">
+                    <div>
+                        <h3>SUPPORT</h3>
+                        <p>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="page-content">
+                <div class="support-form-container">
+                    <form id="supportForm" class="support-form" action="#" method="post" enctype="multipart/form-data">
+                        <h2>Game Support Form</h2>
+                    
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    
+                        <label for="platform">Platform:</label>
+                        <select id="platform" name="platform" required>
+                            <option value="pc">PC</option>
+                            <option value="console">Console</option>
+                        </select>
+                    
+                        <label for="issue-type">Issue Type:</label>
+                        <select id="issue-type" name="issue-type" required>
+                            <option value="bug">Bug Report</option>
+                            <option value="account">Account Issue</option>
+                            <option value="payment">Payment Issue</option>
+                            <option value="other">Other</option>
+                        </select>
+                    
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description" rows="5" placeholder="Describe your issue..." required></textarea>
+                    
+                        <label for="attachment">Attachment (optional):</label>
+                        <input type="file" id="attachment" name="attachment" accept=".png, .jpg, .jpeg, .pdf">
+                    
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+
+                <div class="submission-list" id="submissionList">
+                    <h3>Submissions</h3>
+                    <div id="submissions"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <script src="js/elements/footer.js" defer></script>
+        <script>
+            window.addEventListener('DOMContentLoaded', function() {
+                loadFooter(document.querySelector("footer"));
+            });
+        </script>
+    </footer>
+</body>
+</html>
